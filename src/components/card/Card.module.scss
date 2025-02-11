@@ -1,0 +1,23 @@
+@use '../../variables.module.scss';
+
+// Card
+.cardContainer {
+    height: auto;
+    width: 100%;
+    // background: variables.$green;
+    color: variables.$white;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: .5rem;
+    // border-bottom: 1px solid #6c757d;
+
+    img {
+        height: auto;
+        width: 15rem;
+        border-radius: .5rem;
+    }
+  
+  }
