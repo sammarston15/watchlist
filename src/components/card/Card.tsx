@@ -12,7 +12,7 @@ const Card = () => {
     const moviesMap = topRatedMovies?.results?.map((movie, i) => (
         <div  key={i}>
             <img src={`${apiBaseImageURL}${movie.poster_path}`} alt={movie.title} />
-            <span>{movie.title}</span>
+            {/* <span>{movie.title}</span> */}
         </div>
     ))
     // topRatedMovies.results.forEach(i => {

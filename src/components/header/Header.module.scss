@@ -4,7 +4,7 @@
 .headerContainer {
     height: 50px;
     width: 100%;
-    background: variables.$dark;
+    background: transparent;
     color: variables.$white;
     display: flex;
     // border-bottom: 1px solid #6c757d;
@@ -15,7 +15,7 @@
     //   background: lightblue;
       display: flex;
       align-items: center;
-      padding: 0 1rem;
+      padding: 0 5rem;
   
       .title {
         font-size: 1.5rem;
@@ -35,41 +35,54 @@
       .search{
         width: 40%;
         margin-right: 1rem;
-        font-size: 1rem;
-        border-radius: 5px;
+        border-radius: 12px;
         padding: .5rem;
         outline: none;
-        background: #343a40;
-        font-family: 'Quicksand', sans-serif;
-        color: #dee2e6;
+        background: transparent;
+        color: variables.$white;
+        font-size: 1rem;
         font-weight: 600;
-        border: 2px solid #495057;
+        font-family: inherit;
+        border: 2px solid variables.$paynes-gray;
+        box-shadow: rgba(151, 157, 172, 0.4) 0px 5px, rgba(125, 133, 151, 0.3) 0px 10px, rgba(92, 103, 125, 0.2) 0px 15px, rgba(51, 65, 92, 0.1) 0px 20px, rgba(0, 18, 51, 0.05) 0px 25px;
         
       }
       .search::placeholder {
         color: #dee2e6;
-        font-family: 'Quicksand', sans-serif;
         // text-transform: uppercase;
         font-weight: 600;
+        color: variables.$paynes-gray;
       }
       .search:hover {
-        background: #495057;
+        border: 2px solid variables.$cool-gray;
+      }
+      .search:focus {
+        border: 2px solid variables.$cool-gray;
       }
   
-      .btn {
-        border-radius: 5px;
+      .tab {
         padding: .5rem .7rem;
-        font-family: 'Quicksand', sans-serif;
+        margin: 0 .3rem;
         font-weight: 600;
         font-size: 1rem;
+        font-family: inherit;
         outline: none;
-        background: #343a40;
+        background: transparent;
         color: #fff;
-        border: 1px solid #495057;
+        border: 2px solid transparent;
+        box-shadow: rgba(151, 157, 172, 0.4) 0px 5px, rgba(125, 133, 151, 0.3) 0px 10px, rgba(92, 103, 125, 0.2) 0px 15px, rgba(51, 65, 92, 0.1) 0px 20px, rgba(0, 18, 51, 0.05) 0px 25px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        // .btnIconSpacing {
+        //     padding-right: .5rem;
+        // }
       }
-      .btn:hover {
-        cursor: pointer;
-        background: #495057;
+      // .tab:nth-child(n) {
+      //     border-right: 2px dashed variables.$cool-gray;
+      // }
+      .tab:hover {
+          cursor: pointer;
+          background: variables.$yale-blue;
       }
   
     }

@@ -3,12 +3,13 @@
 // Card
 .cardContainer {
     height: auto;
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     // background: variables.$green;
     color: variables.$white;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
     justify-items: center;
     padding: .5rem;

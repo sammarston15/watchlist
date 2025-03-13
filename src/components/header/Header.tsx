@@ -13,11 +13,14 @@ const Header: FC = () => {
         <div className={styles.title}><Link to='/' style={{color: 'inherit', textDecoration: 'none'}}>My Movie Watchlist</Link></div>
       </div>
       <div className={styles.headerRight}>
-        <input type="text" className={styles.search} /* value={} */ placeholder='Search Contacts...' onChange={(e) => {
+        <input type="text" className={styles.search} /* value={} */ placeholder='Search...' onChange={(e) => {
           dispatch(setContactSearch(e.target.value))
         }} />
-        <Link to='/new'>
-          <button className={styles.btn} ><i className="fas fa-plus"></i></button>
+        <Link to='/watchlist'>
+          <button className={styles.tab} >WATCHLIST</button>
+        </Link>
+        <Link to='/account'>
+          <button className={styles.tab} >ACCOUNT</button>
         </Link>
       </div>
     </div>

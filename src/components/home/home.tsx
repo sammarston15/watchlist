@@ -28,11 +28,14 @@ export const Home: FC = () => {
         <div className={styles.home}>
             <Header />
             <div className={styles.homeNav}>
-                <button className={styles.btn}>
-                    <span className={styles.btnIconSpacing}>
-                        <i className="fa-solid fa-plus"></i>
-                    </span>{" "}
-                    Add movie/show
+                <button className={styles.tab}>
+                    Top Rated
+                </button>
+                <button className={styles.tab}>
+                    Movies
+                </button>
+                <button className={styles.tab}>
+                    Shows
                 </button>
             </div>
             {loading ? (

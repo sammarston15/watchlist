@@ -1,6 +1,6 @@
 import { createAction, createAsyncThunk } from "@reduxjs/toolkit";
 import { User } from "../../models/interfaces/user";
-import { Contact, TopRatedMovies } from "../../models/interfaces/topRatedMovies";
+import { TopRatedMovies } from "../../models/interfaces/topRatedMovies";
 // import { SortValues } from '../../models/SortValues'
 import axios from "axios";
 // import { create } from "domain";

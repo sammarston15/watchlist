@@ -13,6 +13,7 @@ const App: FC = () => (
     <div className={styles.App}>
       <Routes>
         <Route path="/" element={<Home />} />
+        {/* <Route path="/watchlist" element={<Watchlist />} /> */}
       </Routes>
     </div>
   </Router>
