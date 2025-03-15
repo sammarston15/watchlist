@@ -27,7 +27,7 @@
         box-shadow: rgba(151, 157, 172, 0.4) 0px 5px, rgba(125, 133, 151, 0.3) 0px 10px, rgba(92, 103, 125, 0.2) 0px 15px, rgba(51, 65, 92, 0.1) 0px 20px, rgba(0, 18, 51, 0.05) 0px 25px;
         border-top-left-radius: 7px;
         border-top-right-radius: 7px;
-        transition: all .8s ease-out;
+        transition: all .5s ease-out;
         // transform: translate(0)
         // .btnIconSpacing {
         //     padding-right: .5rem;
@@ -39,7 +39,7 @@
     .tab:hover {
         cursor: pointer;
         background: variables.$yale-blue;
-        animation: shift-up .3s ease-in-out;
+        animation: shift-up .2s ease-in-out;
         transform: translateY(-3px);
     }
 
@@ -50,5 +50,10 @@
         100% {
             transform: translateY(-3px);
         }
+    }
+
+    .active {
+        background: variables.$yale-blue;
+        // transform: translateY(-3px);
     }
 }

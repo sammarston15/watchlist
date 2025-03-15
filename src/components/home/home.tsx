@@ -28,7 +28,7 @@ export const Home: FC = () => {
         <div className={styles.home}>
             <Header />
             <div className={styles.homeNav}>
-                <button className={styles.tab}>
+                <button className={`${styles.tab} ${styles.active}`}>
                     Top Rated
                 </button>
                 <button className={styles.tab}>
