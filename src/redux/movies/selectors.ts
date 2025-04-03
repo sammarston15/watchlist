@@ -2,6 +2,7 @@ import { RootState } from "../store";
 import { SortValues } from "../../models/SortValues";
 
 export const selectIsLoading = (state: RootState) => state.movies.loading;
+export const selectIsLoggedIn = (state: RootState) => state.movies.loggedIn;
 export const selectTopRatedMovies = (state: RootState) => state.movies.topRatedMovies;
 export const selectConfigurationDetails = (state: RootState) => state.movies.configurationDetails;
 export const selectContacts =

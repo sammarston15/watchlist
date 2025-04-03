@@ -8,6 +8,7 @@ interface MovieState {
   topRatedMovies: TopRatedMovies,
   configurationDetails: object,
   sortStatus: SortValues,
+  loggedIn: boolean
 }
 
 const initialState: MovieState = {
@@ -15,6 +16,7 @@ const initialState: MovieState = {
     topRatedMovies: {} as TopRatedMovies,
     configurationDetails: {},
     sortStatus: SortValues.FIRST_ASC,
+    loggedIn: false
 }
 
 const contactReducer = createReducer(initialState, (movies) => {

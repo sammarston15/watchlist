@@ -1,11 +1,15 @@
-import React, { FC } from 'react'
+import { FC, useState } from 'react'
 import styles from './Header.module.scss'
 import { setContactSearch } from '../../redux/movies/actions'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router'
 
+
+
 const Header: FC = () => {
   const dispatch = useDispatch();
+  const [loggedIn, setLoggedIn] = useState(false);
+
 
   return (
     <div className={styles.headerContainer}>
@@ -17,11 +21,17 @@ const Header: FC = () => {
           dispatch(setContactSearch(e.target.value))
         }} />
         <Link to='/watchlist'>
-          <button className={styles.tab} >WATCHLIST</button>
+          <button className={styles.tab}>WATCHLIST</button>
         </Link>
-        <Link to='/account'>
-          <button className={styles.tab} >ACCOUNT</button>
-        </Link>
+        { loggedIn ? 
+          <Link to='/account'>
+            <button className={styles.tab}>Account</button>
+          </Link>
+          :
+          <Link to='/login'>
+            <button className={styles.tab}>Login/Signup</button>
+          </Link>
+        }
       </div>
     </div>
   )
